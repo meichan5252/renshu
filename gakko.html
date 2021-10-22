@@ -15,8 +15,7 @@
       embedded
       arjs="sourceType: webcam; debugUIEnabled: false;"
     >
-      <a-assets>
-        <a-asset-item id="test" src="./assets/test.png"></a-asset-item>
+      
       <a-text
         value="Chiba University"
         look-at="[gps-camera]"
@@ -32,7 +31,9 @@
         gps-entity-place="latitude: 35.623665; longitude: 140.104425;"
       ></a-text>
         
-      <a-image id="test" src="#./assets/test.png"
+      <a-assets>
+        <a-asset-item id="gazou" src="test.png"></a-asset-item>
+      <a-image src="#gazou"
         look-at="[gps-camera]"
         scale="20 20 20"
         gps-entity-place="latitude: 35.653783; longitude: 140.055030;"
