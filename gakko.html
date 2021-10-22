@@ -16,13 +16,21 @@
       arjs="sourceType: webcam; debugUIEnabled: false;"
     >
       
+      <a-assets>
+        <a-assets>
+          <img id="gazou" src="test.png">
+        </a-asset-item>
+      <a-image src="#gazou"
+        look-at="[gps-camera]"
+        scale="20 20 20"
+        gps-entity-place="latitude: 35.653783; longitude: 140.055030;"
+      ></a-image>
       <a-text
         value="Chiba University"
         look-at="[gps-camera]"
         scale="20 20 20"
         gps-entity-place="latitude: 35.6249542170571; longitude: 140.1038758627506;"
       ></a-text>
-        
         <a-text
         value="NANDENAN?"
         look-at="[gps-camera]"
@@ -30,14 +38,6 @@
         color="red"
         gps-entity-place="latitude: 35.623665; longitude: 140.104425;"
       ></a-text>
-        
-      <a-assets>
-        <a-asset-item id="gazou" src="test.png"></a-asset-item>
-      <a-image src="#gazou"
-        look-at="[gps-camera]"
-        scale="20 20 20"
-        gps-entity-place="latitude: 35.653783; longitude: 140.055030;"
-      ></a-image>
       
       <a-camera gps-camera rotation-reader> </a-camera>
     </a-scene>
