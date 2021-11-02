@@ -58,19 +58,6 @@
         gps-entity-place="latitude: 35.627612; longitude: 140.102372;"
       ></a-text>
       <a-camera gps-camera rotation-reader> </a-camera>
-    </a-scene>
-      <script>
-      window.addEventListener('load', () => {
-        const el = document.querySelector('[gps-entity-place]');
-        el.addEventListener('gps-entity-place-update-positon', (event) => {
-          if(event.detail.distance <= 30) {
-            el.setAttribute('value','color: red');
-          } else if(event.detail.distance <= 50) {
-            el.setAttribute('value','color: yellow');
-          } else {
-            el.setAttribute('value','color: green');
-        });
-      });
-      </script>
+    
   </body>
 </html>
