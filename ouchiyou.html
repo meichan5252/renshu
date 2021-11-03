@@ -79,6 +79,8 @@
         gps-entity-place="latitude: 35.528876; longitude: 140.080531;"
       ></a-text>
       <a-camera gps-camera rotation-reader> </a-camera>
+      </a-scene>
+    
       <script>
       window.addEventListener('load', () => {
         const el = document.querySelector('[gps-entity-place]');
@@ -90,6 +92,7 @@
           }
         });
       });
-    </a-scene>
+      </script>
+    
   </body>
 </html>
