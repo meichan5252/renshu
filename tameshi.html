@@ -34,9 +34,9 @@
         const el = document.querySelector('[gps-entity-place]');
         el.addEventListener('gps-entity-place-update-positon', (event) => {
           if(event.detail.distance < 50) {
-            el.setAttribute('value','color: yellow');
+            el.setAttribute('color','blue');
           } else {
-            el.setAttribute('value','color: red');
+            el.setAttribute('color','yellow');
           }
         });
       });
