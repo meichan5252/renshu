@@ -15,17 +15,25 @@
       embedded
       arjs="sourceType: webcam; debugUIEnabled: false;"
     >
-      <a-assets>
-        <a-assets>
-          <img id="gazou" src="test.png">
-        </a-asset-item>
-        
-      <a-image src="#gazou"
+      <a-text
+        value="ちかく"
+        font="mplus-msdf.json"
+        font-image="mplus-msdf.png"
+        negate="false"
         look-at="[gps-camera]"
-        scale="20 20 20"
-        gps-entity-place="latitude: 35.653783; longitude: 140.055030;"
-      ></a-image>
-      
+        scale="10 10 10"
+        gps-entity-place="latitude: 35.52935111056348; longitude: 140.0837876374537;"
+      ></a-text>
+      <a-text
+        value="とおく"
+        font="mplus-msdf.json"
+        font-image="mplus-msdf.png"
+        negate="false"
+        look-at="[gps-camera]"
+        scale="10 10 10"
+        gps-entity-place="latitude: 35.52928527135535; longitude: 140.0827900415085;"
+      ></a-text>
+
       <a-camera gps-camera rotation-reader> </a-camera>
     </a-scene>
   </body>
