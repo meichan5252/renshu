@@ -115,11 +115,9 @@
       </a-scene>
 
      <script>
-      AFRAME.registerComponent('markerhandler', {
+      AFRAME.registerComponent('gps-entity-place-update-positon', {
         init: function () {
-          window.addEventListener('load', () => {
-            const el = document.querySelectorALL('[gps-entity-place]');
-            el.addEventListener('gps-entity-place-update-positon', (event) => {
+            this.el.addEventListener('gps-entity-place-update-positon', (event) => {
                if(event.detail.distance < 50) {
                  el.setAttribute('value','color: yellow');
                } else {
