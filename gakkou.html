@@ -15,7 +15,7 @@
     <script>
       window.addEventListener('load', () => {
         const el = document.querySelector('[gps-entity-place]');
-        el.addEventListener('gps-entity-place-update-positon', (event) => {
+        el.addEventListener('gps-entity-place-update-positon', function(event) => {
           if(event.detail.distance < 50) {
             el.setAttribute('value','color: yellow');
           } else {
