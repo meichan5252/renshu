@@ -98,7 +98,7 @@
     
       <script>
       window.addEventListener('DOMContentLoaded', () => {
-        const el = document.querySelector('[gps-entity-place]');
+        const el = document.querySelector('value');
         el.addEventListener('gps-entity-place-update-positon', (event) => {
           if(event.detail.distance < 50) {
             el.setAttribute('color','green');
