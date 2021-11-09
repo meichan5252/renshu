@@ -24,8 +24,8 @@
         negate="false"
         look-at="[gps-camera]"
         color="white"
-        scale="50 50 50"
-        random-position="min: 0 10 0; max: 0 80 0"
+        scale="25 25 25"
+        random-position="min: 0 10 0; max: 0 70 0"
         gps-entity-place="latitude: 35.62370808349736; longitude: 140.10449404127607;"
       ></a-text>
       <a-text
@@ -35,8 +35,8 @@
         negate="false"
         look-at="[gps-camera]"
         color="white"
-        scale="50 50 50"
-        random-position="min: 0 10 0; max: 0 80 0"
+        scale="25 25 25"
+        random-position="min: 0 10 0; max: 0 70 0"
         gps-entity-place="latitude: 35.623882357762724; longitude: 140.10439820528038;"
       ></a-text>
       <a-text
@@ -46,8 +46,8 @@
         negate="false"
         look-at="[gps-camera]"
         color="white"
-        scale="50 50 50"
-        random-position="min: 0 10 0; max: 0 80 0"
+        scale="25 25 25"
+        random-position="min: 0 10 0; max: 0 70 0"
         gps-entity-place="latitude: 35.62411665009235; longitude: 140.1042426219673;"
       ></a-text>
       <a-text
@@ -56,9 +56,9 @@
         font-image="mplus-msdf.png"
         negate="false"
         look-at="[gps-camera]"
-        color="green"
-        scale="20 20 20"
-        random-position="min: 0 0 0; max: 0 65 0"
+        color="white"
+        scale="25 25 25"
+        random-position="min: 0 10 0; max: 0 70 0"
         gps-entity-place="latitude: 35.62451539220308; longitude: 140.1040026872604;"
       ></a-text>
       <a-text
@@ -67,9 +67,9 @@
         font-image="mplus-msdf.png"
         negate="false"
         look-at="[gps-camera]"
-        color="green"
-        scale="30 30 30"
-        random-position="min: 0 0 0; max: 0 65 0"
+        color="white"
+        scale="25 25 25"
+        random-position="min: 0 10 0; max: 0 70 0"
         gps-entity-place="latitude: 35.625328810822474; longitude: 140.10343219341453;"
       ></a-text>
       <a-text
@@ -78,9 +78,9 @@
         font-image="mplus-msdf.png"
         negate="false"
         look-at="[gps-camera]"
-        color="green"
-        scale="30 30 30"
-        random-position="min: 0 0 0; max: 0 65 0"
+        color="white"
+        scale="25 25 25"
+        random-position="min: 0 10 0; max: 0 70 0"
         gps-entity-place="latitude: 35.62610556571824; longitude: 140.1029384598041;"
       ></a-text>
       <a-text
@@ -100,25 +100,14 @@
         font-image="mplus-msdf.png"
         negate="false"
         look-at="[gps-camera]"
-        color="green"
-        scale="100 100 100"
-        random-position="min: 0 0 0; max: 0 65 0"
+        color="white"
+        scale="25 25 25"
+        random-position="min: 0 10 0; max: 0 70 0"
         gps-entity-place="latitude: 35.627654749443906; longitude: 140.1019085244114;"
       ></a-text>
 
       <a-camera gps-camera rotation-reader> </a-camera>
       </a-scene>
     
-    <script>
-        const el = document.querySelector('[gps-entity-place]');
-        el.addEventListener('gps-entity-place-update-positon', function(event) => {
-          if(event.detail.distance < 50) {
-            el.setAttribute('value','color: yellow');
-          } else {
-            el.setAttribute('value','color: red');
-          }
-        });
-      </script>
-
   </body>
 </html>
